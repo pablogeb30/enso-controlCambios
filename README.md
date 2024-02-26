@@ -11,4 +11,17 @@ El esqueleto de este repositorio está asociado al proyecto software que se desa
 3.	El proceso de control de este cambio se realiza en esta nueva rama modificando los archivos de la carpeta asociada con las operaciones pertinentes de Git.
 4.	En la fase de inclusión del cambio, una vez se ha verificado su correcta adhesión al proyecto, se combinan esta rama y la rama principal para incluir el cambio en la línea base y generar así una nueva versión. De este modo, se cierra el proceso de gestión del cambio y la rama finaliza su actividad.
 
+## Formato de un commit:
+
+Para la realización de un commit en el repositorio local y su posterior publicación en el repositorio remoto, se debe seguir una estructura concreta. El objetivo de esta especificación es facilitar la compresión de los cambios realizados por parte de todos los miembros del equipo. Esto favorece el entendimiento sobre qué se ha modificado y por qué se ha hecho, además de mejorar enormemente la comunicación y las posibilidades de colaboración dentro del equipo. Un commit cuenta con dos campos que tendrán la siguiente estructura:
+
+**Título**: [*content* | *fix* | *refactor* | *style*]: breve descripción del cambio
+
+Descripción:
+- ID del cambio referenciado: formato de la actividad concreta (ver definición de cada plantilla).
+- Referencia a historia de usuario de Taiga: TG-N.
+- Mensaje detallado: explicación detallada de los cambios realizados y por qué se llevaron a cabo.
+- [Opcional] Comentarios: información adicional.
+
+En primer lugar, en el título del commit se indica el tipo de cambio realizado, donde se distinguen: content (inclusión o borrado de contenido), fix (corrección de un error), refactor (reformulación de contenido) y style (cambios de estilo del contenido). A continuación, se explica brevemente el cambio en cuestión. Dentro de la descripción son obligatorios los tres primeros campos, aunque, si fuera necesario, se pueden incluir por ejemplo referencias a fuentes de información a modo de comentarios.
 
